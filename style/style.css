@@ -1,0 +1,362 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* ---------------- Navbar ----------------- */
+
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(https://raw.githubusercontent.com/thatanjan/netflix-clone-yt/youtube/media//banner.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 10px 8%;
+    border-bottom: 8px solid #6d6363;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 0;
+    background: transparent;    
+}
+.logo{
+    background: transparent;
+    width: 160px;
+    padding-top: 20px;
+    cursor: pointer;
+}
+.nav-btn{
+    padding: 7px 12px;
+    border: 2px solid red;
+    background: red;
+    color: #fff;
+    border-radius: 7px;
+    cursor: pointer;
+    font-weight: 700;
+}
+.nav-btn:hover{
+    background: transparent;
+    transition: 0.5s ease-in;
+}
+
+/* ---------------- Banner ----------------- */
+
+.banner{
+    text-align: center;   
+}
+.banner-h1{
+    font-weight: 900;
+    padding-top: 13vw;
+}
+.banner-h4{
+    padding-top: 1vw;
+}
+.banner-h5{
+    padding-top: 1vw;
+}
+.address{
+    padding-top: 2vw;
+    display: flex;
+    gap: 1.5vh;
+    justify-content: center;
+    align-items: center;
+}
+.email{
+    padding: 12px 60px 12px 12px;
+    background: #a89696;
+    color: #000;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+}
+.email::placeholder{
+    color: #000;
+}
+.email:hover,
+.email:focus{
+    border: 2px solid #dfd8d8;
+}
+.get-btn{
+    padding: 12px 15px;
+    background: red;
+    border-radius: 5px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+}
+.get-btn:hover{
+    background: rgb(160, 6, 6);
+    transition: 0.3s ease-in;
+}
+
+/* ---------------- Enjoy ----------------- */
+
+.container-1{
+    background: #000;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 20px 120px;
+    gap: 2vw;
+    border-bottom: 8px solid #6d6363;
+}
+.c1-img{
+    width: 550px;
+}
+.c1-h1{
+    font-weight: 900;
+    padding-top: 8vw;
+}
+.c1-h4{
+    padding-top: 1vw;
+}
+
+/* ---------------- Download ----------------- */
+
+.container-2{
+    background: #000;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 20px 130px;
+    gap: 4vw;
+    border-bottom: 8px solid #6d6363;
+}
+.c2-img{
+    width: 450px;
+    padding-top: 3vw;
+}
+.c2-h1{
+    font-weight: 900;
+    padding-top: 8vw;
+}
+.c2-h4{
+    padding-top: 1vw;
+}
+
+/* ---------------- Watch ----------------- */
+
+.container-3{
+    background: #000;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 20px 120px;
+    gap: 4vw;
+    border-bottom: 8px solid #6d6363;
+}
+.c3-img{
+    width: 550px;
+    padding-top: 3vw;
+}
+.c3-h1{
+    font-weight: 900;
+    padding-top: 8vw;
+}
+.c3-h4{
+    padding-top: 1vw;
+}
+
+/* ---------------- Create ----------------- */
+
+.container-4{
+    background: #000;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    padding: 20px 130px;
+    gap: 4vw;
+    border-bottom: 8px solid #6d6363;
+}
+.c4-img{
+    width: 500px;
+    padding-top: 3vw;
+}
+.c4-h1{
+    font-weight: 900;
+    padding-top: 8vw;
+}
+.c4-h4{
+    padding-top: 1vw;
+}
+
+/* ---------------- Responsive ----------------- */
+
+@media(max-width: 1100px){
+    .banner-h1{
+        padding-top: 25vw;
+    }
+    .header{
+        height: 80vh;
+    }
+    .container-1{
+        height: 80vh;
+        gap: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-2{
+        height: 80vh;
+        gap: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-3{
+        height: 80vh;
+        gap: 1vw;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .container-4{
+        height: 80vh;
+        gap: 1vh;
+        display: flex;
+        flex-wrap: wrap;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .c1-img{
+        width: 600px;
+    }
+    .c2-img{
+        width: 600px;
+    }
+    .c3-img{
+        width: 600px;
+    }
+    .c4-img{
+        width: 600px;
+    }
+}
+
+@media(max-width: 800px){
+    .logo{
+        width: 150px;
+    }
+    .banner-h1{
+        padding-top: 18vw;
+        font-weight: 700;
+    }
+    .container-1{
+        height: 100vh;
+        padding: 15px 50px;
+    }
+    .container-2{
+        height: 100vh;
+        padding: 15px 50px;
+    }
+    .container-3{
+        height: 100vh;
+        padding: 15px 50px;
+    }
+    .container-4{
+        height: 100vh;
+        padding: 15px 50px;
+    }
+    .c1-img{
+        width: 450px;
+    }
+    .c2-img{
+        width: 450px;
+    }
+    .c3-img{
+        width: 450px;
+    }
+    .c4-img{
+        width: 450px;
+    }
+}
+
+@media(max-width: 500px){
+    .logo{
+        width: 100px;
+        padding: 0;
+    }
+    .header{
+        height: 100vh;
+    }
+    .banner-h1{
+        padding-top: 15vw;
+        font-weight: 800;
+    }
+    .banner-h4{
+        padding-top: 2vw;
+        font-size: 18px;
+    }
+    .banner-h5{
+        padding-top: 2vw;
+        font-size: 17px;
+    }
+    .address{
+        padding-top: 3vw;
+        display: flex;
+        flex-direction: column;
+    }
+    .banner-button{
+        padding-top: 3vw;
+    }
+    .container-1{
+        height: 110vh;
+        padding: 5px 25px;
+    }
+    .container-2{
+        height: 110vh;
+        padding: 20px 25px 10px 25px;
+    }
+    .container-3{
+        height: 110vh;
+        padding: 5px 25px;
+    }
+    .container-4{
+        height: 110vh;
+        padding: 20px 25px 10px 25px;
+    }
+    .c1-img{
+        width: 300px;
+    }
+    .c2-img{
+        width: 300px;
+    }
+    .c3-img{
+        width: 300px;
+    }
+    .c4-img{
+        width: 300px;
+    }
+    .c1-h1{
+        font-size: 28px;
+    }
+    .c2-h1{
+        font-size: 28px;
+    }
+    .c3-h1{
+        font-size: 28px;
+    }
+    .c4-h1{
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 350px){
+    .banner-h1{
+        padding-top: 17vw;
+    }
+    .header{
+        height: 105vh;
+    }
+}
